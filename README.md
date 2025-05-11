@@ -25,17 +25,7 @@
 * 🎓 MCA from **GITA Autonomous College, BPUT**
 * 👨‍💼 Ex-Intern at **Spatial Hawk Geoinformatics Pvt. Ltd**
 * ❤ Building GIS tools, fintech platforms, and virtual collaboration apps
-* 🌐 [Portfolio](https://github.com/souvikd2019) (coming soon)
-
-<div align="center">
-
-![GitHub followers](https://img.shields.io/github/followers/souvikd2019)
-[![](https://visitcount.itsvg.in/api?id=souvikd2019\&label=Profile%20Views\&color=0\&icon=0\&pretty=false)](https://visitcount.itsvg.in)
-
-![Souvik's Stats](https://github-readme-stats.vercel.app/api?username=souvikd2019\&theme=dracula\&show_icons=true\&hide_border=false\&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=souvikd2019\&theme=dark\&show_icons=true\&hide_border=false\&layout=compact)
-
-</div>
+* 🌐 [Portfolio](https://souvik-das-tech.github.io/portfolio/)
 
 ### 🎓 Education
 
@@ -94,7 +84,8 @@
 
 ### 📢 Social Links
 
-<a href="mailto:souvikd2019@outlook.com">![Email](https://img.shields.io/badge/Email-souvikd2019%40outlook.com-red?style=for-the-badge\&logo=gmail\&logoColor=white)</a> <a href="https://www.linkedin.com/in/souvikd2019">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)</a> <a href="https://t.me/souvikd">![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge\&logo=telegram\&logoColor=white)</a>
+<a href="mailto:souvikd2019@outlook.com">![Email](https://img.shields.io/badge/Email-souvikd2019%40outlook.com-red?style=for-the-badge\&logo=gmail\&logoColor=white)</a> <a href="https://www.linkedin.com/in/souvik-das-3455b0224/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)</a> <a href="https://t.me/souvikd">![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge\&logo=telegram\&logoColor=white)</a> <a href="https://github.com/bigbangcodelab">![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)</a> <a href="https://www.instagram.com/souvik_das.tech">![Instagram (Personal)](https://img.shields.io/badge/Instagram_souvik__das.tech-E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)</a> <a href="https://www.instagram.com/bigbangcodelab/">![Instagram (Brand)](https://img.shields.io/badge/Instagram_bigbangcodelab-E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)</a> <a href="https://www.facebook.com/profile.php?id=61572611859812">![Facebook (Personal)](https://img.shields.io/badge/Facebook_souvikdas-1877F2?style=for-the-badge\&logo=facebook\&logoColor=white)</a> <a href="https://www.facebook.com/profile.php?id=61558310417304">![Facebook (Brand)](https://img.shields.io/badge/Facebook_bigbangcodelab-1877F2?style=for-the-badge\&logo=facebook\&logoColor=white)</a> <a href="https://www.youtube.com/channel/UCh7xM-PVyEeOtLtSIIZAouA">![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge\&logo=youtube\&logoColor=white)</a>
+
 
 ---
 
