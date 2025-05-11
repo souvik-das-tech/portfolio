@@ -72,12 +72,19 @@
 ### ⚖️ Skills
 
 **Frontend:** Angular, Angular Material, TailwindCSS, Bootstrap
+
 **Mobile:** Flutter, Ionic
+
 **Backend:** Node.js, Express.js, Laravel
+
 **Database:** PostgreSQL, MySQL, SQLite, PostGIS
+
 **GIS:** GeoServer, OpenLayers, Leaflet
+
 **DevOps:** Docker, Nginx, Git, Bitbucket, AWS EC2, VPS
+
 **Real-Time:** WebRTC, Socket.IO
+
 **Others:** Firebase, REST API, Jira, Agile, Architecture Planning
 
 ---
