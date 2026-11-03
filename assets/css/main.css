@@ -1457,3 +1457,94 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/*--------------------------------------------------------------
+# Skill Groups (chips)
+--------------------------------------------------------------*/
+.skills .skill-group {
+  height: 100%;
+  padding: 22px 24px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 10px;
+}
+
+.skills .skill-group h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.skills .skill-group h4 i {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+.skills .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills .chip {
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+/*--------------------------------------------------------------
+# Open Source Projects
+--------------------------------------------------------------*/
+.projects .project-card {
+  display: block;
+  height: 100%;
+  padding: 26px 24px;
+  color: var(--default-color);
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.projects .project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.projects .project-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  margin-bottom: 12px;
+}
+
+.projects .project-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.projects .project-card h3 i {
+  font-size: 14px;
+  color: var(--accent-color);
+}
+
+.projects .project-stack {
+  font-size: 13px;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 10px;
+}
+
+.projects .project-card p:last-child {
+  font-size: 14px;
+  margin-bottom: 0;
+}
