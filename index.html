@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:wght@400;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -51,7 +51,6 @@
         <li><a href="#approach"><i class="bi bi-lightbulb navicon"></i><span>Approach</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#projects"><i class="bi bi-github navicon"></i><span>Projects</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Gallery</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
@@ -65,6 +64,7 @@
     <section id="hero" class="hero section light-background">
 
       <img src="assets/img/hero-bg.jpg" alt="">
+      <canvas id="geo-canvas" aria-hidden="true"></canvas>
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
@@ -76,6 +76,14 @@
               <a href="https://github.com/souvik-das-tech" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://www.linkedin.com/in/souvik-das-3455b0224" target="_blank"><i
                   class="bi bi-linkedin"></i></a>
+            </div>
+
+            <div class="code-terminal" aria-label="Profile summary in a terminal">
+              <div class="term-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="term-title">souvik@dev: ~</span>
+              </div>
+              <pre class="term-body" id="term-body"></pre>
             </div>
           </div>
         </div>
@@ -97,7 +105,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Souvik Das">
           </div>
           <div class="col-lg-8 content">
             <h2>Full Stack Engineer &amp; Team Lead · GIS Domain Specialist</h2>
@@ -455,88 +463,6 @@
 
     </section><!-- /Projects Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Work Gallery</h2>
-        <p>Screens from real-world applications, tools and platforms I've built across full-stack and geospatial
-          engineering.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-          </ul> -->
-          <!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Portfolio Images Only -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/1.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/2.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/3.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/4.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/5.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/6.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/7.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/8.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/9.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/10.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/11.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/12.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-              <img src="assets/img/portfolio/13.jpeg" class="img-fluid" alt="Portfolio Image">
-            </div>
-
-            <!-- Add more images here as needed -->
-            <!-- Example: -->
-            <!--
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-          <img src="assets/img/portfolio/your-image.jpg" class="img-fluid" alt="Portfolio Image">
-        </div>
-        -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-
-
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>What I Can Help With</h2>
@@ -702,6 +628,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/coder.js"></script>
 
   <script>
     function sendWhatsAppMessage() {

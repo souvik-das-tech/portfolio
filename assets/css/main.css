@@ -1548,3 +1548,98 @@ section,
   font-size: 14px;
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Coder animations: geo canvas, terminal, title decode
+--------------------------------------------------------------*/
+.hero #geo-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero .code-terminal {
+  margin-top: 32px;
+  max-width: 520px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0d1117;
+  box-shadow: 0 18px 50px rgba(13, 17, 23, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.hero .term-bar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 14px;
+  background: #161b22;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero .term-bar .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.hero .term-bar .red { background: #ff5f57; }
+.hero .term-bar .yellow { background: #febc2e; }
+.hero .term-bar .green { background: #28c840; }
+
+.hero .term-title {
+  margin-left: 8px;
+  font-family: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  font-size: 12px;
+  color: #8b949e;
+}
+
+.hero .term-body {
+  margin: 0;
+  padding: 16px 18px 18px;
+  min-height: 330px;
+  font-family: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #c9d1d9;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.term-body .t-u { color: #7ee787; }
+.term-body .t-d { color: #79c0ff; }
+.term-body .t-p { color: #c9d1d9; }
+.term-body .t-cmd { color: #ffffff; }
+.term-body .t-v { color: #ffa657; font-weight: 600; }
+.term-body .t-c { color: #8b949e; font-style: italic; }
+.term-body .t-k { color: #79c0ff; }
+.term-body .t-s { color: #a5d6ff; }
+.term-body .t-b { color: #ff7b72; }
+.term-body .t-ok { color: #3fb950; }
+
+.term-body .t-cursor {
+  color: #58a6ff;
+  animation: term-blink 1s steps(1) infinite;
+}
+
+@keyframes term-blink {
+  50% { opacity: 0; }
+}
+
+.section-title h2 {
+  font-variant-ligatures: none;
+}
+
+@media (max-width: 768px) {
+  .hero .term-body {
+    font-size: 12px;
+    min-height: 300px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .term-body .t-cursor { animation: none; }
+}
