@@ -1797,3 +1797,77 @@ section,
     padding-left: 90px;
   }
 }
+
+/* Hero v2: keep the intro above the fold.
+   Banner height is capped; the full image stays visible (contain) and the
+   side space is filled with a blurred copy of the same image. */
+.hero.hero-v2 .hero-banner {
+  height: min(37.21vw, 45vh);
+  min-height: 150px;
+}
+
+.hero.hero-v2 .hero-banner:before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  background: url("../img/hero-banner-sm.jpg") center / cover no-repeat;
+  filter: blur(28px) saturate(1.1);
+  opacity: 0.85;
+}
+
+.hero.hero-v2 .hero-banner picture {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+}
+
+.hero.hero-v2 .hero-banner img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.hero.hero-v2 .hero-banner:after {
+  z-index: 2;
+  height: 50px;
+}
+
+.hero.hero-v2 .hero-content {
+  padding: 26px 0 60px;
+}
+
+.hero.hero-v2 h2 {
+  font-size: 48px;
+}
+
+.hero.hero-v2 .hero-lead {
+  margin-top: 12px;
+}
+
+.hero.hero-v2 .hero-actions {
+  margin-top: 20px;
+}
+
+.hero.hero-v2 .social-links {
+  margin-top: 18px;
+}
+
+.hero.hero-v2 .term-body {
+  min-height: 300px;
+  padding: 14px 18px 16px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* Hero v2: edge-to-edge banner, height capped, cropped from the top so the
+   face, name and tagline stay in view. No blurred side fill. */
+.hero.hero-v2 .hero-banner:before {
+  display: none;
+}
+
+.hero.hero-v2 .hero-banner img {
+  object-fit: cover;
+  object-position: center 15%;
+}
