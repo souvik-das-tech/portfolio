@@ -10,6 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
+  <link rel="preload" as="image" href="assets/img/hero-banner.jpg" media="(min-width: 1025px)">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -61,29 +62,48 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class="hero hero-v2 section">
 
-      <img src="assets/img/hero-bg.jpg" alt="">
-      <canvas id="geo-canvas" aria-hidden="true"></canvas>
+      <div class="hero-banner">
+        <picture>
+          <source media="(max-width: 1024px)" srcset="assets/img/hero-banner-sm.jpg">
+          <img src="assets/img/hero-banner.jpg" width="2056" height="765"
+            alt="Souvik Das: Maps, Data, People, Impact. Turning geospatial data into a brighter tomorrow.">
+        </picture>
+      </div>
 
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Souvik Das</h2>
-            <p>I'm <span class="typed" data-typed-items="a Full Stack Engineer,a Team Lead,a GIS Domain Specialist,a System Designer,an Experimenter">a Full Stack Engineer</span><span
-                class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              <a href="https://github.com/souvik-das-tech" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/souvik-das-3455b0224" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
+      <div class="hero-content">
+        <canvas id="geo-canvas" aria-hidden="true"></canvas>
+
+        <div class="container">
+          <div class="row gy-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-up">
+              <span class="hero-eyebrow">Maps · Data · Systems · Impact</span>
+              <h2>Souvik Das</h2>
+              <p class="hero-typed">I'm <span class="typed" data-typed-items="a Full Stack Engineer,a Team Lead,a GIS Domain Specialist,a System Designer,an Experimenter">a Full Stack Engineer</span><span
+                  class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+              <p class="hero-lead">4+ years shipping WebGIS platforms, 3D geospatial pipelines and systems that serve
+                1,000+ concurrent users. Domain first, stack second.</p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn-hero">View Projects</a>
+                <a href="assets/Souvik_Das_CV.pdf" target="_blank" class="btn-hero btn-hero-outline"><i class="bi bi-download"></i> Download CV</a>
+              </div>
+              <div class="social-links">
+                <a href="https://github.com/souvik-das-tech" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/souvik-das-3455b0224" target="_blank" aria-label="LinkedIn"><i
+                    class="bi bi-linkedin"></i></a>
+                <a href="mailto:souvik.d.it@outlook.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+              </div>
             </div>
 
-            <div class="code-terminal" aria-label="Profile summary in a terminal">
-              <div class="term-bar">
-                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                <span class="term-title">souvik@dev: ~</span>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+              <div class="code-terminal" aria-label="Profile summary in a terminal">
+                <div class="term-bar">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="term-title">souvik@dev: ~</span>
+                </div>
+                <pre class="term-body" id="term-body"></pre>
               </div>
-              <pre class="term-body" id="term-body"></pre>
             </div>
           </div>
         </div>
